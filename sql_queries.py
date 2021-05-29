@@ -54,7 +54,7 @@ DO NOTHING
 
 # FIND SONGS
 
-song_select = (""" SELECT s.song_id, a.artist_id FROM songs as s INNER JOIN artists as a ON s.artist_id =a.artist_id WHERE s.title = %(songname)s AND a.name = %(artist)s and s.duration = %(length)s
+song_select = (""" SELECT s.song_id, a.artist_id FROM songs as s INNER JOIN artists as a ON s.artist_id =a.artist_id WHERE s.title = %s AND a.name = %s and s.duration = %s
 """)
 
 # QUERY LISTS
